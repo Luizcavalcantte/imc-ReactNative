@@ -22,7 +22,7 @@ export default function App() {
     let kg = parseFloat(peso.replace(',', '.').replace(' ', ''));
     let alt = parseFloat(altura.replace(',', '.').replace(' ', ''));
     let resultado = kg / (alt * 2);
-    setResultado(resultado.toFixed(2));
+    setResultado('Resultado: ' + resultado.toFixed(2));
 
     if (resultado <= 18.4) {
       setDescricao(
@@ -66,7 +66,7 @@ export default function App() {
         }}>
         <Text style={styles.btnText}>Calcular</Text>
       </TouchableOpacity>
-      <Text style={styles.resultado}>Resultado: {resultado}</Text>
+      <Text style={styles.resultado}>{resultado}</Text>
       <Text style={styles.descricao}>{descricao}</Text>
     </View>
   );
