@@ -46,7 +46,6 @@ export default function App() {
       <TextInput
         placeholder="Altura"
         placeholderTextColor="lightgray"
-        returnKeyType="numeric"
         keyboardType="numeric"
         style={styles.input}
         onChangeText={inputAltura => {
